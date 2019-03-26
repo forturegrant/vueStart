@@ -1,6 +1,6 @@
 <template>
   <div>
-    <head-top></head-top>
+    <head-top :go="go" @con="con"></head-top>
     <nav-top></nav-top>
   </div>
 </template>
@@ -10,11 +10,18 @@
   import navTop from './nav'
   export default {
     data() {
-      return {}
+      return {
+        go: 1
+      }
     },
     components: {
       headTop,
       navTop
+    },
+    methods:{
+      con(){
+        console.log(go);
+      }
     }
   }
 </script>

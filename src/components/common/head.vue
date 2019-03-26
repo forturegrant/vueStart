@@ -1,7 +1,8 @@
 <template>
   <header class="header">
     <span>ele.me</span>
-    <span>登录|注册</span>
+    <span @click="con()">登录|注册</span>
+    <span>{{go}}</span>
   </header>
 </template>
 
@@ -10,6 +11,12 @@
     data() {
       return {
 
+      }
+    },
+    props:['go'],
+    methods:{
+      con(){
+        this.$emit('con')
       }
     }
   }
