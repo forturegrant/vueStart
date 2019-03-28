@@ -125,7 +125,7 @@ export const foodDelivery = (latitude, longitude) => fetch('/shopping/v1/restaur
 
 
 /**
- * 获取food页面的商家属性活动列表
+ * 获取food页面的商家属性活动列表fasdfadsfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdafsfaaaasdfadsadfaasdf
  */
 
 export const foodActivity = (latitude, longitude) => fetch('/shopping/v1/restaurants/activity_attributes', {

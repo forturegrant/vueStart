@@ -8,14 +8,20 @@ const state = {
   longitude: '', // 当前位置经度
 }
 
+const getters = {
+
+}
+
 const mutations = {
   recordAddress(state,{latitude,longitude}){
     state.latitude = latitude;
     state.longitude = longitude;
-  }
+  },
 }
 
 export default new Vuex.Store({
   state,
-  mutations
+  getters,
+  mutations,
+  actions
 })
